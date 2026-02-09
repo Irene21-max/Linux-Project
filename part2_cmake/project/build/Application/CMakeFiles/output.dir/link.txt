@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/output.dir/app.c.o -o ../out/output  -Wl,-rpath,/home/irene/part2_cmake/project/build/out/libs ../out/libs/libcaesar_cipher.a ../out/libs/libxor_cipher.so 
