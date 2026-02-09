@@ -1,0 +1,31 @@
+m) How can we achieve this (2 methods) ? Write the steps to these 2 methods in a text file.
+
+method1:
+	1) open directory that have bash script "part1.sh"
+	  "cd /path/"
+	2) move script to /usr/local/bin/
+	  sudo mv part1.sh /usr/local/bin/
+	3) give permisstion to execute the script
+	  sudo chmod +x /usr/local/bin/part1.sh
+	4) it can now run from anywhere by using just the name
+	
+method2:
+	1) find directory where script is exist 
+	  pwd part1.sh
+	2) add path as local variable to shell by export
+	   export PATH=$PATH:/home/irene/project linux/project/part1
+	3) now we can run it but it isn't permenant change (life time of terminal)
+	 
+
+n) We would like this change to be permanent, how can we do this?
+	1) open .bashrc file
+	  nano ~/.bashrc
+	2) add following line 
+	  export PATH=$PATH:/home/irene/project linux/project/part1
+	3) save it and close
+
+o) We just made this change permanent, but we don’t want to wait until another terminal is
+opened, we would like to make this change NOW, and in this terminal. What could we do?
+	run command to make chages immediatly
+	  source ~/.bashrc
+	
